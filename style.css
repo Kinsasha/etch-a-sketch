@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(229, 227, 255, 0.858);
+}
+.container-one {
+  display: flex;
+  justify-content: center;
+  /*border: solid red 1px;*/
+}
+.boxes {
+  height: 40px;
+  width: 40px;
+  border: solid black 1px;
+  background-color: rgb(35, 255, 141);
+}
