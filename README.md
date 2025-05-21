@@ -1,7 +1,7 @@
 # etch-a-sketch project
 
 /_js section_/
-create gridbox, rows and columns
+declare gridbox, rows and columns
 call your container from your html file and style it
 -equate the container width and height the gridbox
 create a function to create grid cells. In the function;
