@@ -1,5 +1,6 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -9,13 +10,21 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 100px auto;
+  margin: 0 auto;
   border: solid black 1px;
 }
 .boxes {
   display: flex;
   border: solid rgb(207, 207, 207) 1px;
 }
-.boxes:hover {
-  background-color: blue;
+.button-container {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 0;
+  padding: 24px;
+  padding-bottom: 0;
+  border: solid 1px black;
+}
+.squares {
+  margin: 10px auto;
 }
