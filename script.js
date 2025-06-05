@@ -9,6 +9,7 @@ divContainer.style.width = `${GRIDSIDE}px`;
 
 function createGridBoxes(squaresPerSide = 16) {
   divContainer.innerHTML = "";
+
   for (let i = 0; i < squaresPerSide * squaresPerSide; i++) {
     const gridBoxes = document.createElement("div");
     gridBoxes.className = "boxes";
@@ -39,9 +40,22 @@ squareButton.addEventListener("click", changeSquareNumber);
 
 function changeSquareNumber() {
   const square = Number(prompt("Enter a number"));
-  if (isNaN(square) || square <= 0) {
-    alert("please input a number greater than 0");
+  if (isNaN(square) || square <= 0 || square > 100) {
+    alert("please input a number greater than 0 and less than 100");
     return;
   }
   createGridBoxes(square);
 }
+
+// const gradientMode = document.querySelector(".gradient");
+
+// gradientMode.addEventListener("click", changeToGradient);
+
+// function changeToGradient() {
+//   for (let i = 0; i <= 100; i += 10) {
+//     const gradBoxes = document.querySelector(".boxes");
+//     gradBoxes.addEventListener('mouseover',() => {
+//       gradBoxes.style.backgroundColor =
+//     });
+//   }
+// }
