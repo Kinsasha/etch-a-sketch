@@ -47,6 +47,15 @@ function changeSquareNumber() {
   createGridBoxes(square);
 }
 
+const topText = document.querySelector(".toppage");
+const r = Math.floor(Math.random() * 256);
+const g = Math.floor(Math.random() * 256);
+const b = Math.floor(Math.random() * 256);
+
+const rgbColors = `rgb(${r}, ${g}, ${b})`;
+
+topText.style.color = rgbColors;
+
 // const gradientMode = document.querySelector(".gradient");
 
 // gradientMode.addEventListener("click", changeToGradient);
